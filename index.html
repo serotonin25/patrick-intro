@@ -182,7 +182,6 @@
     </style>
 </head>
 <body>
-    <!-- Canvas for Matrix Background -->
     <canvas id="matrix"></canvas>
 
     <header>
@@ -195,7 +194,6 @@
     </header>
 
     <section class="hero">
-        <!-- Profile Image -->
         <img src="patrick.jpg" alt="Patrick Mapula">
         <h1>Patrick Mapula</h1>
         <p>"Gaming is my escape from reality."</p>
@@ -229,20 +227,16 @@
     <footer>
         <p>&copy; 2024 Patrick Mapula. All rights reserved.</p>
     </footer>
-
-    <!-- Custom Cursor JS -->
     <div class="cursor"></div>
 
     <script>
-        // JavaScript for Matrix Effect
+       
         const canvas = document.getElementById("matrix");
         const ctx = canvas.getContext("2d");
 
-        // Set canvas size
         canvas.height = window.innerHeight;
         canvas.width = window.innerWidth;
 
-        // Characters to display in the matrix
         const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
         const fontSize = 16;
         const columns = canvas.width / fontSize;
@@ -271,7 +265,6 @@
 
         setInterval(drawMatrix, 33);
 
-        // Custom Cursor JS
         const cursor = document.querySelector('.cursor');
         document.addEventListener('mousemove', (e) => {
             cursor.style.left = e.pageX - cursor.offsetWidth / 2 + 'px';
